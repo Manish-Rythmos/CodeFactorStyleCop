@@ -1,0 +1,11 @@
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\bin\Debug\netcoreapp2.0\Api.deps.json
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\bin\Debug\netcoreapp2.0\Api.runtimeconfig.json
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\bin\Debug\netcoreapp2.0\Api.runtimeconfig.dev.json
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\bin\Debug\netcoreapp2.0\Api.dll
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\obj\Debug\netcoreapp2.0\Api.csprojResolveAssemblyReference.cache
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\obj\Debug\netcoreapp2.0\Api.csproj.CoreCompileInputs.cache
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\obj\Debug\netcoreapp2.0\Api.AssemblyInfoInputs.cache
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\obj\Debug\netcoreapp2.0\Api.AssemblyInfo.cs
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\bin\Debug\netcoreapp2.0\Api.pdb
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\obj\Debug\netcoreapp2.0\Api.dll
+D:\Unity\POC\Projects\CodeFactorStyleCop\Api\obj\Debug\netcoreapp2.0\Api.pdb
