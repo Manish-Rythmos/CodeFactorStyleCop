@@ -3106,8 +3106,11 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
-      "StyleCop.Analyzers/1.1.0-beta004": {
-        "type": "package"
+      "StyleCop.MSBuild/5.0.0": {
+        "type": "package",
+        "build": {
+          "build/StyleCop.MSBuild.targets": {}
+        }
       },
       "System.AppContext/4.3.0": {
         "type": "package",
@@ -7976,24 +7979,32 @@
         "stackexchange.redis.strongname.nuspec"
       ]
     },
-    "StyleCop.Analyzers/1.1.0-beta004": {
-      "sha512": "Vh4hpJfXuNyXwfo7FC5GmhAm4nVf4BzcxxW1MTtbCS+a9h5Y9u/TOEEzM/g/NuzaADMdsYjnMpvVPo5i9AQzww==",
+    "StyleCop.MSBuild/5.0.0": {
+      "sha512": "9FwYUg4/ODk7oHEEulbjdNQi2s/IaG+JB52hvCORhktJLFCN44KERH2fEwrE6Uk9SuZbBrUB2hKMDI+3ZC+QyQ==",
       "type": "package",
-      "path": "stylecop.analyzers/1.1.0-beta004",
+      "path": "stylecop.msbuild/5.0.0",
       "files": [
-        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
-        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
-        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
-        "stylecop.analyzers.1.1.0-beta004.nupkg.sha512",
-        "stylecop.analyzers.nuspec",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
+        "build/StyleCop.MSBuild.targets",
+        "license.txt",
+        "stylecop.msbuild.5.0.0.nupkg.sha512",
+        "stylecop.msbuild.nuspec",
+        "tools/CustomDictionary.en-GB.xml",
+        "tools/CustomDictionary.en-US.xml",
+        "tools/CustomDictionary.xml",
+        "tools/Settings.StyleCop",
+        "tools/StyleCop.CSharp.Rules.dll",
+        "tools/StyleCop.CSharp.dll",
+        "tools/StyleCop.SettingsEditor.exe",
+        "tools/StyleCop.dll",
+        "tools/de-DE/StyleCop.CSharp.Rules.resources.dll",
+        "tools/en-GB/StyleCop.CSharp.Rules.resources.dll",
+        "tools/es-MX/StyleCop.CSharp.Rules.resources.dll",
+        "tools/fr-FR/StyleCop.CSharp.Rules.resources.dll",
+        "tools/mssp7en.dll",
+        "tools/mssp7en.lex",
+        "tools/pl-PL/StyleCop.CSharp.Rules.resources.dll",
+        "tools/pt-BR/StyleCop.CSharp.Rules.resources.dll",
+        "tools/ru-RU/StyleCop.CSharp.Rules.resources.dll"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -12553,7 +12564,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "StyleCop.Analyzers >= 1.1.0-beta004"
+      "StyleCop.MSBuild >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -12566,11 +12577,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Unity\\POC\\Projects\\CodeFactorStyleCop\\Api\\Api.csproj",
+      "projectUniqueName": "D:\\Unity\\POC\\GitHubProjects\\CodeFactorStyleCop\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "D:\\Unity\\POC\\Projects\\CodeFactorStyleCop\\Api\\Api.csproj",
+      "projectPath": "D:\\Unity\\POC\\GitHubProjects\\CodeFactorStyleCop\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\M Bhakuni\\.nuget\\packages\\",
-      "outputPath": "D:\\Unity\\POC\\Projects\\CodeFactorStyleCop\\Api\\obj\\",
+      "outputPath": "D:\\Unity\\POC\\GitHubProjects\\CodeFactorStyleCop\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12600,6 +12611,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "StyleCop.MSBuild": {
+            "target": "Package",
+            "version": "5.0.0"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -12608,10 +12623,6 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
-          },
-          "StyleCop.Analyzers": {
-            "target": "Package",
-            "version": "1.1.0-beta004"
           }
         },
         "imports": [
